@@ -10,13 +10,13 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='aws-decorators',
-    version='0.0.2',
+    version='0.0.3',
     packages=find_packages(exclude=['tests']),
     include_package_data=True,
     description='decorators for aws things',
     long_description='decorators for aws things',
     url='https://github.com/meganlkm/aws-decorators',
     author='meganlkm',
-    author_email='devstuff.io@gmail.com',
+    author_email='megan.lkm@gmail.com',
     install_requires=['boto3']
 )
