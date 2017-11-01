@@ -6,7 +6,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='aws-decorators',
-    version='0.0.4',
+    version='0.0.5',
     license='MIT',
     packages=find_packages(),
     include_package_data=True,
