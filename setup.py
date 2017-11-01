@@ -6,7 +6,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='aws-decorators',
-    version='0.0.5',
+    version='0.0.6',
     license='MIT',
     packages=find_packages(),
     include_package_data=True,
@@ -16,7 +16,7 @@ setup(
     author='meganlkm',
     author_email='megan.lkm@gmail.com',
     keywords=['aws', 'decorators'],
-    install_requires=['boto3'],
+    install_requires=['boto3==1.4.7'],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
