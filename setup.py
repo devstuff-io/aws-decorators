@@ -14,7 +14,7 @@ setup(
     long_description='decorators for aws things',
     url='https://github.com/meganlkm/aws-decorators',
     author='meganlkm',
-    author_email='megan.lkm@gmail.com',
+    author_email='devstuff.io@gmail.com',
     keywords=['aws', 'decorators'],
     install_requires=['boto3>=1.4.3,<=1.5.0'],
     classifiers=[
