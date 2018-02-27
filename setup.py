@@ -1,7 +1,7 @@
 import ast
 import os
 import re
-from setuptools import setup, find_packages
+from setuptools import setup
 
 
 # allow setup.py to be run from any path
@@ -35,7 +35,7 @@ setup(
     name='aws-decorators',
     version=VERSION,
     license='MIT',
-    packages=find_packages(),
+    packages=['aws_decorators'],
     include_package_data=True,
     description='decorators for aws things',
     long_description='decorators for aws things',
