@@ -39,7 +39,7 @@ setup(
     include_package_data=True,
     description='decorators for aws things',
     long_description='decorators for aws things',
-    url='https://github.com/meganlkm/aws-decorators',
+    url='https://github.com/devstuff-io/aws-decorators',
     author='meganlkm',
     author_email='devstuff.io@gmail.com',
     install_requires=REQUIREMENTS,

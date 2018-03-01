@@ -3,7 +3,7 @@ aws-decorators
 
 Helpful decorators for aws things
 
-Documentation: https://github.com/meganlkm/aws-decorators
+Documentation: https://github.com/devstuff-io/aws-decorators
 
 
 Installation

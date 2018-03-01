@@ -44,4 +44,4 @@ def boto_client(service_name, client_type='client', region=AWS_REGION,
     return _get_client
 
 
-__version__ = '0.0.8'
+__version__ = '0.0.9'
