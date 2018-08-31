@@ -1,16 +1,13 @@
-import ast
 import os
-import re
-from setuptools import setup
-
-
-# allow setup.py to be run from any path
-os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
+from setuptools import setup, find_packages
 
 BASEDIR = os.path.dirname(os.path.abspath(__file__))
-VERSION = None
+VERSION = open(os.path.join(BASEDIR, 'VERSION')).read().strip()
 REQUIREMENTS = []
 DEPENDENCY_LINKS = []
+
+os.chdir(os.path.normpath(BASEDIR))
+
 
 with open(os.path.join(BASEDIR, 'requirements.txt')) as fp:
     lines = fp.readlines()
@@ -24,18 +21,11 @@ with open(os.path.join(BASEDIR, 'requirements.txt')) as fp:
             REQUIREMENTS.append(line)
 
 
-_version_re = re.compile(r'__version__\s+=\s+(.*)')
-with open('aws_decorators/__init__.py', 'rb') as f:
-    VERSION = str(ast.literal_eval(
-        _version_re.search(f.read().decode('utf-8')).group(1)
-    ))
-
-
 setup(
     name='aws-decorators',
     version=VERSION,
     license='MIT',
-    packages=['aws_decorators'],
+    packages=find_packages(),
     include_package_data=True,
     description='decorators for aws things',
     long_description='decorators for aws things',
@@ -49,7 +39,6 @@ setup(
         'decorators'
     ],
     classifiers=[
-        'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
